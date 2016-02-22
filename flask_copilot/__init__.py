@@ -14,7 +14,7 @@ __all__ = ('Copilot',)
 
 try:
     _dist = pkg_resources.get_distribution(__package__)
-    if not __file__.startswith(os.path.join(_dist.location, '__package__')):
+    if not __file__.startswith(os.path.join(_dist.location, __package__)):
         # Manually raise the exception if there is a distribution but
         # it's installed from elsewhere.
         raise pkg_resources.DistributionNotFound
