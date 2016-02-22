@@ -6,9 +6,6 @@ Flask-Copilot |build status|
 
 Handling your app's navigation, so you don't have to.
 
-.. note::
-   Flask-Copilot is not yet available on PyPI, but it will be soon.
-
 Resources
 =========
 
