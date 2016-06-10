@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='Flask-Copilot',
-    version='0.2.0',
+    version='0.3.0',
     author='Jon Banafato',
     author_email='jon@jonafato.com',
     description='Simple navbar generation for Flask applications.',
