@@ -1,7 +1,7 @@
 Version 0.2.0
 =============
 
-Released TBA
+Released 2016-06-10
 
 - Add ``NavbarEntry.invisible_children`` for easier use inside of templates.
 
