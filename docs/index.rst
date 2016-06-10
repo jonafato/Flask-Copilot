@@ -39,8 +39,8 @@ Quickstart
           <a href="{{ entry.url() }}">
             {{ entry.name }}
           </a>
-          {% if entry.children %}
-            <ul class="dropdown">{{ loop(entry.children) }}</ul>
+          {% if entry.visible_children|list %}
+            <ul class="dropdown">{{ loop(entry.visible_children) }}</ul>
           {% endif %}
         </li>
       {% endfor %}

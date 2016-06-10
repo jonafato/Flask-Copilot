@@ -164,8 +164,13 @@ class NavbarEntry(object):
         if self.when:
             return self.when()
         elif self.children and not self.endpoint:
-            return any(child.visible for child in self.children)
+            return any(self.visible_children)
         return True
+
+    @property
+    def visible_children(self):
+        """Return visible children."""
+        return filter(lambda child: child.visible, self.children)
 
     def url(self, default_href='#'):
         """Return a rendered URL for this entry.
